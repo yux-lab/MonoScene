@@ -110,6 +110,13 @@ $ pip install -e ./
 
       - The **Semantic Scene Completion dataset v1.1** (SemanticKITTI voxel data (700 MB)) from [SemanticKITTI website](http://www.semantic-kitti.org/dataset.html#download)
       -  The **KITTI Odometry Benchmark calibration data** (Download odometry data set (calibration files, 1 MB)) and the **RGB images** (Download odometry data set (color, 65 GB)) from [KITTI Odometry website](http://www.cvlibs.net/datasets/kitti/eval_odometry.php).
+      - The dataset folder at **/path/to/semantic_kitti** should have the following structure:
+    ```
+    └── /path/to/semantic_kitti/
+      └── dataset
+        ├── poses
+        └── sequences
+    ```
 
 
 2. Create a folder to store SemanticKITTI preprocess data at `/path/to/kitti/preprocess/folder`.
@@ -148,6 +155,8 @@ $ cd MonoScene/
 $ python monoscene/data/NYU/preprocess.py NYU_root=$NYU_ROOT NYU_preprocess_root=$NYU_PREPROCESS
 
 ```
+
+
 
 ### KITTI-360
 
